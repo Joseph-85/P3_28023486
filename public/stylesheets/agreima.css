@@ -15,7 +15,7 @@ body {
     transform: translate(-140px, -11%);
 }
 
-.T1{
+.T1{ 
     position:absolute;
     top: 10%;
     left: 50%;
@@ -35,13 +35,14 @@ body {
 
 .T2{
     position:absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
     background: linear-gradient(150deg, rgb(136, 199, 225), rgb(214, 55, 235));
     border-radius: 10px;
     border: #ce9be2 solid 8px;
+     display: block;
 }
 
 .T2 caption{
@@ -54,11 +55,24 @@ body {
 .T3{
     font-family:Georgia, 'Times New Roman', Times, serif ;
     padding: 10px 10px;
-    
+    display: block;
 
 }
 .T3 a{
     color: rgb(132, 14, 159);
+
+}
+
+.table{
+    position:absolute;
+    top: 10%;
+    left: 10%;
+    width: 400px;
+    transform: translate(-5%, -40%);
+     background: linear-gradient(150deg, rgb(136, 199, 225), rgb(214, 55, 235));
+    border-radius: 10px;
+    border: #ce9be2 solid 8px;
+     display: block;
 
 }
 
@@ -75,9 +89,17 @@ body {
     
 }
 
+.T5{
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    padding: 4px 15px;
+    display: block;
+
+}
+
+
 img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 

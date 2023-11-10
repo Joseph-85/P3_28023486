@@ -18,7 +18,7 @@
     <a href="/productos">Productos</a>
 </div>
     <div  class="T2">
-        <table border="1">
+        <table border="1" class="table">
             <caption>Imagenes</caption>
             <tr class="T3">
                 <th>N°</th>
@@ -26,12 +26,12 @@
                 <th>Destacado</th>
                 <td><a href="/iA">Agregar</a></td>
             </tr>
-            <tr>
+            <tr class="T5">
                 <% if (imagenes) { %>
                     <% for (let i = 0; i < imagenes.length; i++){  %>
                         <% if (imagenes) { %>
-                            <tr>
-                                <td><%= (i + 1) %></td>
+                            <tr class="T5">
+                                <td ><%= (i + 1) %></td>
                                 <div class="Img">
                                 <td><img src="<%= imagenes[i].url %>"></td>
                                 </div>
