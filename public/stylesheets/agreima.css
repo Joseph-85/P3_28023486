@@ -1,0 +1,84 @@
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    background: linear-gradient(150deg, #6C3483, rgb(250, 2, 2) );
+    height: 100vh;
+}
+
+.m2{
+    position:absolute;
+    height: 740px ;
+    width: 1390px;
+    top: 10%;
+    left: 10%;
+    transform: translate(-140px, -11%);
+}
+
+.T1{
+    position:absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 800px;
+    background: linear-gradient(150deg, rgb(136, 199, 225), rgb(214, 55, 235));
+    border-radius: 10px;
+    border: #ce9be2 solid 8px;
+    padding: 5px 5px;
+}
+
+.T1 a{
+    padding: 10px 10px;
+
+}
+
+.T2{
+    position:absolute;
+    position:sticky;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: linear-gradient(150deg, rgb(136, 199, 225), rgb(214, 55, 235));
+    border-radius: 10px;
+    border: #ce9be2 solid 8px;
+}
+
+.T2 caption{
+   top: 30%;
+   left: 80%;
+   font-family:Georgia, 'Times New Roman', Times, serif ;
+
+}
+
+.T3{
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    padding: 10px 10px;
+    
+
+}
+.T3 a{
+    color: rgb(132, 14, 159);
+
+}
+
+
+
+
+.T4 a{
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    list-style-type: circle;
+    display: inline-block;
+    color: rgb(132, 14, 159);
+    
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+

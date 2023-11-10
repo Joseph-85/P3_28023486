@@ -1,0 +1,18 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Categoria</title>
+   <link rel="stylesheet" href="/stylesheets/eliminar.css">
+</head>
+<body>
+    <div>
+        <h3>¿Está seguro de eliminar esta categoria?</h3>
+        <form action="/elimy/<%= categorias.id %>" method="get">
+            <h4><%= categorias.nombre %></h4>
+            <button type="submit" class="btn btn-primary">Eliminar Categoria</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Imagen</title>
+    <link rel="stylesheet" href="/stylesheets/increima.css">
+</head>
+<body> 
+    <div class="formulario2">
+        <form action="/Actuayimg/ <%= imagenes.id %>" method="post">
+            <h1>Actualizar Imagen</h1>
+            <div class="i1">
+
+<div class="i1">
+            <input type="text" name="url" id="url" value="<%= imagenes.url %>" required maxlength="200" minlength="3">
+        </div>
+            <select name="destacado" id="destacado">
+                <option value="">--Seleccione--</option>
+                <option value="Si">Si</option>
+                <option value="No">NO</option>
+            </select>
+            <input type="submit" value="Actualizar Imagen">
+        
+        </div>
+        </form>
+    </div>
+</body>
+</html>

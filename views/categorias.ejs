@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/agre.css">
+    <title>Categoria</title>
+</head>
+<body> 
+    <div>
+        <img src="images/4.jpg" class="m2">
+    </div>
+    <h1>Pagina Categorias</h1>
+    <div class="T1">
+    <a href="/home">Amdinistracion</a>
+    <a href="/productos">Productos</a>
+    <a href="/imagenes">Imagenes</a>
+    </div>
+    
+    <div class="T2">
+        <table border="1">
+            <caption>Categorias</caption>
+            <tr class="T3">
+                <th>N°</th>
+                <th>Nombre</th>
+                <td><a href="/catA">Agregar</a></td>
+            </tr>
+            <tr>
+                <% if (categorias) { %>
+                    <% for (let i = 0; i < categorias.length; i++){  %>
+                        <% if (categorias) { %>
+                            <tr>
+                                <td><%= (i + 1) %></td>
+                                <td><%= categorias[i].nombre %></td>
+                                <td>
+                                    <div class="T4">
+                                        <a href="/catE/<%= categorias[i].id%>">Eliminar</a>
+                                        <a href="/catAc/<%= categorias[i].id%>">Actualizar</a>
+                                    </div>
+                                </td>
+                            </tr>    
+                        <% } %>
+                    <% } %>
+                <% } else { %>
+                        <tr>
+                            <th>No hay categorias en el sistema</th>
+                        </tr>
+                    <% }   %>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

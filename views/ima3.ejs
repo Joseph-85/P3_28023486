@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Imagen</title>
+    <link rel="stylesheet" href="/stylesheets/.css">
+</head>
+<body>
+    <div>
+        <h3>¿Está seguro de eliminar esta Imagen?</h3>
+        <form action="/elimyimg/<%= imagenes.id %>" method="get">
+            <img src="<%= imagenes.url %>">
+            <button type="submit" class="btn btn-primary">Eliminar Imagen</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+    <link rel="stylesheet" href="/stylesheets/agreima.css">
+</head>
+<body>
+    <div>
+        <img src="images/4.jpg" class="m2">
+    </div>
+    <h1>Pagina Imagenes</h1>
+    <div class="T1">
+    <a href="/home">Administracion</a>
+    <a href="/categorias">Categorias</a>
+    <a href="/productos">Productos</a>
+</div>
+    <div  class="T2">
+        <table border="1">
+            <caption>Imagenes</caption>
+            <tr class="T3">
+                <th>N°</th>
+                <th>Imagen</th>
+                <th>Destacado</th>
+                <td><a href="/iA">Agregar</a></td>
+            </tr>
+            <tr>
+                <% if (imagenes) { %>
+                    <% for (let i = 0; i < imagenes.length; i++){  %>
+                        <% if (imagenes) { %>
+                            <tr>
+                                <td><%= (i + 1) %></td>
+                                <div class="Img">
+                                <td><img src="<%= imagenes[i].url %>"></td>
+                                </div>
+                               
+                                <td><%= imagenes[i].destacado %></td>
+                                <td> 
+                                    <div class="T4">
+                                        <a href="/imE/<%= imagenes[i].id%>" class="btn btn-danger">Eliminar</a>
+                                        <a href="/imAc/<%= imagenes[i].id%>" class="btn btn-info">Actualizar</a>
+                                    </div>
+                                </td>
+                            </tr>    
+                        <% } %>
+                    <% } %>
+                <% } else { %>
+                        <tr>
+                            <th>No hay imagenes en el sistema</th>
+                        </tr>
+                    <% }   %>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

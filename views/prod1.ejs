@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto</title>
+    <link rel="stylesheet" href="/stylesheets/increpro.css"> 
+</head>
+<body>
+    <div>
+        <img src="images/5.jpg" class="m3"> 
+    </div>
+   
+    <div class="formulario2">
+        <form action="/prod1" method="post"> 
+            <h1>Agregar Producto</h1>
+            <div class="i1">
+         <div class="i1">   
+            <input type="text" name="nombre" id="nombre" required maxlength="25" minlength="3">
+            <label>Ingrese el nombre del producto</label>
+        </div>
+            <div class="i1">
+            <input type="number" name="codigo" id="codigo" required>
+            <label>Ingrese el codigo del producto</label>
+        </div>
+        <div class="i1">
+            <input type="number" name="precio" id="precio" required>
+            <label>Ingrese el precio del producto</label>
+        </div>
+        <div class="i1">
+            <input type="text" name="empresa" id="empresa" required maxlength="25" minlength="4">
+            <label>Ingrese la empresa del producto</label>
+        </div>
+        <div class="i1">
+            <input type="textarea" name="descripcion" id="descripcion" maxlength="60" minlength="10">
+            <label>Ingrese la descripcion del producto</label>
+        </div>
+            <select name="sexo" id="sexo">
+                <option value="">--Ingrese para que genero es--</option>
+                <option value="Mujeres">Mujeres</option>
+                <option value="Hombres">Hombres</option>
+            </select>
+            <select name="categoria" id="categoria">
+                <option value="" >--Categoria--</option>
+                <% if (categorias) { %>
+                    <% for (let i = 0; i < categorias.length; i++){  %>
+                        <% if (categorias) { %>
+                            <option value="<%= categorias[i].id %>" id="categoria_id" name="categoria_id"><%= categorias[i].nombre %></option>
+    
+                        <% } %>
+                    <% } %>
+                <% } else { %>
+                            <option value="">No existen categorias en el sistema</option>
+                    <% }   %>
+            </select>
+           
+        </div>
+            <input type="submit" value="Subir Product">
+        </form>
+    </div>
+</body>
+</html>
