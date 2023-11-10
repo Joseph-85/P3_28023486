@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eliminar Producto</title>
-    <link rel="stylesheet" href="/stylesheets/.css"> 
+    <link rel="stylesheet" href="/stylesheets/elimipro.css"> 
+    <link rel="shortcut icon" type="image/x-icon" href="/images/images.ico">
 </head>
-<body>
-    <div>
+<body> 
+    <div class="T1">
         <h3>¿Está seguro de eliminar este producto?</h3>
         <form action="/elimyprod/<%= productos.id %>" method="get">
             <h4><%= productos.nombre %></h4>
@@ -16,7 +17,7 @@
             <h4><%= productos.empresa %></h4>
             <h4><%= productos.sexo %></h4>
             <h4><%= productos.descripcion %></h4>
-            <button type="submit" class="btn btn-primary">Eliminar Producto</button>
+            <input type="submit" value="Eliminar Producto">
         </form>
     </div>
 </body>
