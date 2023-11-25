@@ -8,7 +8,7 @@ body {
 
 .m2{
     position:absolute;
-    height: 740px ;
+    height: 740px;
     width: 1390px;
     top: 10%;
     left: 10%;
@@ -74,7 +74,7 @@ body {
     
 }
 
-.table{
+.table {
     position:absolute;
     top: 10%;
     left: 10%;
@@ -84,7 +84,6 @@ body {
     border-radius: 10px;
     border: #ce9be2 solid 8px;
      display: block;
-
 }
 
 

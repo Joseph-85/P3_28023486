@@ -9,12 +9,21 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Login' });
 });
 
+router.get('/contra', function(req, res, next){
+  res.render('contra');
+});
+
+router.get('/index', function(req, res, next){
+  res.render('index');
+});
+
+
 router.post('/login', function(req, res, next){
   const {user, password} = req.body;
   if ((process.env.USER == user) && (process.env.PASSWORD == password)) {
     res.render('admin');
   } else{
-    res.render('loginfail', {title: 'Login Fail'});
+    res.render('erro');
   }
 });
 

@@ -71,6 +71,15 @@
     background: #dc6ea1;
     border-radius: 150px;
 }
+.p4{
+        padding: 0 0 15px 0;
+        text-align: center;
+        box-sizing: border-box;
+        border: 1px solid;
+        font-size: 18px;
+        background: #e7a4d7;
+        border-radius: 150px;   
+}
 
 .p2 a{
     color: black;
@@ -83,4 +92,8 @@
 .p3 a{
     color: black;
 }
+.p4 a{
+    color: black;
+}
+     
      
