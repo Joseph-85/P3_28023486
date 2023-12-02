@@ -1,5 +1,6 @@
 const db = require ('../db/basedeta');
 
+
 module.exports = {
     obtener() {
         return new Promise ((resolve, reject) =>{
