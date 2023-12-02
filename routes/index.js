@@ -5,6 +5,7 @@ const multer = require('multer');
 const app = express();
 
 const VJ = require ('../db/base')
+const VJ2 = require ('../db/base2')
 
 
 /* GET home page. */
@@ -38,45 +39,7 @@ router.get('/clientes', function(req, res, next){
   res.render('clientes');
 });
 
-app.get('/clientes',(req,res)=>{
-  console.log('mostrando pagina la cliente!');
-  VJ.ClientesGET(req,res);
-})
 
-app.post('/cliente', (req, res) => {
-  VJ.filtrar(req,res);
- });
-
-app.get('/clientico', (req, res) => {
-  VJ.filtrar2(req,res);
- });
-
-app.get('/detalles/:id',(req,res)=>{
-  VJ.detalles(req,res);
-  });
-
-app.get('/ruta', (req, res) => {
-    const {nombre,codigo,precio,descripcion,calidad,cantidad,url} = req.query;
-  
-    let datos = {
-      nombre:nombre,
-      codigo:codigo,
-      precio:precio,
-      descripcion:descripcion,
-      calidad:calidad,
-      cantidad:cantidad,
-      url:url
-    }
-  
-    console.log(datos,'aun funciona');
-    res.render('bus.ejs',{result:datos});
-  
-  });
- 
-  app.get('/detalles/:id',(req,res)=>{
-    VJ.detalles(req,res);
-  });
- 
  
   
 
@@ -361,6 +324,48 @@ router.get('/elimyimg/:id', function(req,res,next){
     return res.status(500).send('Error elimando la imagen')
   })
 });
+
+
+
+app.get('/clientes',(req,res)=>{
+  console.log('mostrando pagina la cliente!');
+  VJ2.ClientesGET(req,res);
+})
+
+app.post('/cliente', (req, res) => {
+  VJ2.filtrar(req,res);
+ });
+
+app.get('/clientico', (req, res) => {
+  VJ2.filtrar2(req,res);
+ });
+
+app.get('/detalles/:id',(req,res)=>{
+  VJ2.detalles(req,res);
+  });
+
+app.get('/ruta', (req, res) => {
+    const {nombre,codigo,precio,descripcion,calidad,cantidad,url} = req.query;
+  
+    let datos = {
+      nombre:nombre,
+      codigo:codigo,
+      precio:precio,
+      descripcion:descripcion,
+      calidad:calidad,
+      cantidad:cantidad,
+      url:url
+    }
+  
+    console.log(datos,'aun funciona');
+    res.render('bus.ejs',{result:datos});
+  
+  });
+ 
+  app.get('/detalles/:id',(req,res)=>{
+    VJ2.detalles(req,res);
+  });
+ 
 
 
 module.exports = router;
