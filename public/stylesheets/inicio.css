@@ -2,19 +2,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background-image: linear-gradient(120deg, #f6b065 0%, #dd85fd 100%);
     font-family: 'Courgette', cursive;
   }
   
   header {
-    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  
     text-align: center;
     padding: 20px 0;
     font-family: 'Courgette', cursive;
   }
   
   nav {
-    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
     color: rgb(32, 29, 29);
     text-align: center;
     font-family: 'Courgette', cursive;
@@ -36,16 +35,7 @@ body {
     
   }
   
-  .products {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .product {
-    text-align: center;
-    margin: 20px;
-  }
+
   
   .product img {
     width: 200px;
